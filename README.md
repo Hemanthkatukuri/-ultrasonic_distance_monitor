@@ -123,6 +123,12 @@ HiveMQ Broker
     ↑
 Ultrasonic Sensor (Your Hardware)
 ```
+## 📋 User Feedback
+
+We’d love to hear your thoughts!  
+Please take a moment to fill out our short **User Evaluation Form**:
+
+👉 [Click here to evaluate the Ultrasonic Distance Monitor App](https://docs.google.com/forms/d/e/1FAIpQLScd8VmzVvBnR2Gy4s0V0-g3tBNMxZ0fxAy1EmbUzXLIY-Hqtw/viewform)
 
 
 
