@@ -124,9 +124,5 @@ HiveMQ Broker
 Ultrasonic Sensor (Your Hardware)
 ```
 
-## Dependencies
 
-- **Eclipse Paho MQTT**: For MQTT client functionality
-- **AndroidX**: For modern Android components
-- **ConstraintLayout**: For responsive UI design
 
