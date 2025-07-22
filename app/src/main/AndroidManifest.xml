@@ -1,33 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Permissions required for network communication and vibration alerts -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
-        android:allowBackup="true"
-        android:dataExtractionRules="@xml/data_extraction_rules"
-        android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/Theme.SmartBrightnessApk"
-        tools:targetApi="31">
+        android:allowBackup="true"  <!-- Allows app data backup -->
+        android:dataExtractionRules="@xml/data_extraction_rules"  <!-- Rules for data extraction (Android 12+) -->
+        android:fullBackupContent="@xml/backup_rules"              <!-- Rules for full app backup -->
+        android:icon="@mipmap/ic_launcher"                         <!-- App icon -->
+        android:label="@string/app_name"                           <!-- App name from strings.xml -->
+        android:roundIcon="@mipmap/ic_launcher_round"              <!-- Round launcher icon -->
+        android:supportsRtl="true"                                 <!-- Supports right-to-left layout -->
+        android:theme="@style/Theme.SmartBrightnessApk"            <!-- App theme -->
+        tools:targetApi="31">                                      <!-- Target API version (Android 12) -->
+
+        <!-- MainActivity: Entry point of the app -->
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"> <!-- Required for activities with intent-filters in Android 12+ -->
             <intent-filter>
+                <!-- Declares this activity as the launcher activity -->
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
+
+        <!-- TestActivity: Optional screen for simulating sensor data -->
         <activity
             android:name=".TestActivity"
             android:exported="true"
-            android:label="Sensor Simulator" />
+            android:label="Sensor Simulator" /> <!-- Custom label for this screen -->
+
     </application>
 
 </manifest>
